@@ -5,7 +5,7 @@ function App() {
 
   useEffect(() => {
     // Fetch from backend (port 5000)
-    fetch("http://localhost:5000/api/message")
+    fetch("https://first-deployment-zeta-lac.vercel.app/api/message")
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => console.error("Error:", err));

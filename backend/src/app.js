@@ -9,7 +9,7 @@ const app = express();
 // ✅ CORS setup for Vite frontend (localhost:5173)
 app.use(
   cors({
-    origin: "https://chimerical-madeleine-e8cc31.netlify.app/",
+    origin: "https://chimerical-madeleine-e8cc31.netlify.app",
     credentials: true,
   })
 );

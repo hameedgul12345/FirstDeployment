@@ -21,6 +21,12 @@ app.get("/api/message", (req, res) => {
   res.json({ message: "Hello from Express backend 👋" });
 });
 
+
+
+// ✅ Test route
+app.get("/", (req, res) => {
+  res.json({ message: "Hello from Express backend 👋" });
+});
 // ✅ Start server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🔥 Server running on http://localhost:${PORT}`));
